@@ -16,7 +16,7 @@ services:
       - "6379:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-      - REDIS_MAXMEMORY_POLICY=allkeys-lru
+      - REDIS_MAXMEMORY_POLICY=allkeys-lfu
     volumes:
       - ./redis1:/bitnami/redis/data
 
@@ -26,7 +26,7 @@ services:
       - "6380:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-      - REDIS_MAXMEMORY_POLICY=allkeys-lru
+      - REDIS_MAXMEMORY_POLICY=allkeys-lfu
     volumes:
       - ./redis2:/bitnami/redis/data
 
@@ -36,6 +36,6 @@ services:
       - "6381:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-      - REDIS_MAXMEMORY_POLICY=allkeys-lru
+      - REDIS_MAXMEMORY_POLICY=allkeys-lfu
     volumes:
       - ./redis3:/bitnami/redis/data
