@@ -1,0 +1,14 @@
+FROM redis:7.0.10
+
+# establecer el directorio de trabajo
+WORKDIR /usr/src/app
+
+# copiar configuración de redis personalizada
+COPY redis.conf /usr/local/etc/redis/redis.conf
+
+# Exportar el puerto de redis
+EXPOSE 6379
+
+# Ejecutar redis
+CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+
