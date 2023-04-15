@@ -1,4 +1,4 @@
-# Tarea1-Sistemas-distribuidos
-Primera Tarea de sistemas distribuidos
-Cristóbal FLores Monroy 
-Ignacio Eduardo Boettcher Hermosilla
+# Tarea1-Sistemas-distribuidos \n
+Primera Tarea de sistemas distribuidos \n
+Cristóbal Flores Monroy  \n
+Ignacio Eduardo Boettcher Hermosilla \n
